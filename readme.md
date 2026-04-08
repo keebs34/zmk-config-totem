@@ -4,6 +4,16 @@
   <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
 </picture>
 
+This repository is a fork of [GEIGEIGEIST zmk-config-totem](https://github.com/GEIGEIGEIST/zmk-config-totem).
+
+Its `main` branch has the necessary changes to make it build with ZMK `main` branch.
+Its `v0.3-branch` branch has the necessary changes to make it build using ZMK `v0.3-branch` branch.
+
+Both branches also have support for ZMK Studio and enable deep-sleep support.
+
+The keymap is unchanged save for a `&studio_unlock` addition.
+
+
 # ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
 [Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
