@@ -5,11 +5,20 @@
 </picture>
 
 This repository is a fork of [GEIGEIGEIST zmk-config-totem](https://github.com/GEIGEIGEIST/zmk-config-totem).
+It turns it into a [ZMK module](https://zmk.dev/docs/features/modules) and
+follows recommendations from the ZMK project:
+> A common ZMK setup thus consists of the following separate components, commonly housed in their respective Git repositories:
+> - A single ZMK config maintained by the user, containing the .conf and .keymap files for one or multiple keyboards. This is also where files from ZMK or modules should be overridden/modified, if there is a need.
+> - Any number of ZMK modules, maintained by the module's owner. Some modules may contain multiple keyboards or functionalities. If all of your keyboards and functionalities are internal to ZMK's tree, then no modules are necessary.
+> - The ZMK firmware itself, maintained by its contributors.
+
+This git repository only contains the code for the TOTEM shield (read "keyboard" if you are unfamiliar with ZMK terminology).
+It’s meant to be used in combination with a separate "config" repository which will contain your own keymap definitions.
 
 Its `main` branch has the necessary changes to make it build with ZMK `main` branch.
 Its `v0.3-branch` branch has the necessary changes to make it build using ZMK `v0.3-branch` branch.
 
-Both branches also have support for ZMK Studio and enable deep-sleep support.
+Both branches also have support for ZMK Studio.
 
 The keymap is unchanged save for a `&studio_unlock` addition.
 
